@@ -1085,6 +1085,9 @@ footer p {
   section.about .aboutParent .resume a {
     margin: 0 auto;
   }
+  section.about h3 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 860px) {
