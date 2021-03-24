@@ -5,25 +5,4 @@ section.skills {
   .bodyLine {
     margin-bottom: 80px;
   }
-  .gridWrapper {
-    display: grid;
-    grid-template-rows: repeat(2, 200px);
-    grid-template-columns: repeat(6, 180px);
-    grid-gap: 10px;
-    justify-content: center;
-    .icon {
-    font-size: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-    p {
-      text-align: center;
-      line-height: 1;
-    }
-    img {
-      width: 80px;
-    }
-  }
 }

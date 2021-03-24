@@ -677,6 +677,22 @@ section.about p {
   margin-top: 0;
 }
 
+section.about .eventLine p {
+  text-align: center;
+}
+
+section.about h3 {
+  font-family: 'Hamburg Hand Light';
+  color: #444349;
+  letter-spacing: 1px;
+  text-align: left;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
 section.about .resume {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -726,45 +742,6 @@ section.skills .bodyLine {
   margin-bottom: 80px;
 }
 
-section.skills .gridWrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (200px)[2];
-      grid-template-rows: repeat(2, 200px);
-  -ms-grid-columns: (180px)[6];
-      grid-template-columns: repeat(6, 180px);
-  grid-gap: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-section.skills .gridWrapper .icon {
-  font-size: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-section.skills .gridWrapper p {
-  text-align: center;
-  line-height: 1;
-}
-
-section.skills .gridWrapper img {
-  width: 80px;
-}
-
 section.projects {
   background: #EFEFF0;
   height: auto;
@@ -774,87 +751,9 @@ section.projects .bodyLine.seperator {
   width: 50px;
 }
 
-section.projects img {
-  width: 550px;
-}
-
-section.projects .projectParent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 100px;
-  padding-bottom: 100px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-section.projects .projectParent h3 {
-  font-family: 'Hamburg Hand Light';
-  color: #444349;
-  letter-spacing: 2px;
-  text-align: center;
-  font-size: 23px;
-  font-weight: 400;
-  line-height: 1.3;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
-section.projects .projectParent h4 {
-  font-family: 'Hamburg Hand Regular';
-  font-size: 16px;
-  letter-spacing: 1px;
-  font-weight: 400;
-  color: #444349;
-  text-align: center;
-  line-height: 1.3;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-section.projects .projectParent p {
-  width: 550px;
-  margin: 0 auto;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
-section.projects .link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-section.projects .link a {
-  background-color: #b3331a;
-  margin: 20px 20px 0px 20px;
-  padding: 13px 40px;
-  border-radius: 20px;
-  font-family: 'Hamburg Hand Light';
-  font-size: 15px;
-  color: #EFEFF0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  width: 157px;
-  text-align: center;
-}
-
-section.projects .link a:hover, section.projects .link a:focus {
-  background-color: #444349;
-}
-
 section.contact {
   height: auto;
-  background-color: #DCEBEA;
+  background-color: #EFEFF0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1045,6 +944,7 @@ section.contact .phone {
       -ms-flex-align: center;
           align-items: center;
   color: #444349;
+  margin-bottom: 100px;
 }
 
 section.contact .phone a[href^="mailto"] {
@@ -1122,12 +1022,6 @@ footer p {
 }
 
 @media (max-width: 1160px) {
-  section.skills .gridWrapper {
-    -ms-grid-columns: (200px)[4];
-        grid-template-columns: repeat(4, 200px);
-    -ms-grid-rows: (200px)[3];
-        grid-template-rows: repeat(3, 200px);
-  }
   section.projects img,
   section.projects .projectParent p {
     width: 400px;
@@ -1171,18 +1065,6 @@ footer p {
   }
   section.contact form {
     padding-top: 0;
-  }
-  section.skills .gridWrapper {
-    -ms-grid-columns: (190px)[3];
-        grid-template-columns: repeat(3, 190px);
-    -ms-grid-rows: (190px)[4];
-        grid-template-rows: repeat(4, 190px);
-  }
-  section.skills .gridWrapper .icon {
-    font-size: 70px;
-  }
-  section.skills .gridWrapper img {
-    width: 70px;
   }
   section.about .aboutParent {
     -webkit-box-orient: vertical;
@@ -1313,12 +1195,6 @@ footer p {
     font-size: 27px;
     letter-spacing: 2px;
   }
-  section.skills .gridWrapper {
-    -ms-grid-columns: (200px)[2];
-        grid-template-columns: repeat(2, 200px);
-    -ms-grid-rows: (200px)[6];
-        grid-template-rows: repeat(6, 200px);
-  }
   section.projects .projectParent img,
   div.projectParent:nth-child(3) > div:nth-child(2) {
     width: 400px;
@@ -1359,12 +1235,6 @@ footer p {
   }
   section.skills {
     padding-bottom: 35px;
-  }
-  section.skills .gridWrapper {
-    -ms-grid-columns: (180px)[2];
-        grid-template-columns: repeat(2, 180px);
-    -ms-grid-rows: (180px)[6];
-        grid-template-rows: repeat(6, 180px);
   }
   section.projects {
     padding-right: 20px;
@@ -1420,12 +1290,6 @@ footer p {
   }
   section.skills {
     padding-bottom: 45px;
-  }
-  section.skills .gridWrapper {
-    -ms-grid-columns: (145px)[2];
-        grid-template-columns: repeat(2, 145px);
-    -ms-grid-rows: (150px)[6];
-        grid-template-rows: repeat(6, 150px);
   }
 }
 
