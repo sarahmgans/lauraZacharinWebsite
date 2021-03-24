@@ -1,7 +1,7 @@
 section.about{
   height: auto;
   background-color: $lightColor;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   .bodyLine {
     margin-bottom: 100px;
   }
@@ -13,15 +13,10 @@ section.about{
     text-align: center;
   }
   h3 {
-    font-family: 'Hamburg Hand Light';
+    font-family: 'Source Sans Pro';
     color: $darkColor;
-    letter-spacing: 1px;
-    text-align: left;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-top: 0;
-    margin-bottom: 15px;
+    font-size: 23px;
+    margin-top: 0px;
   }
   .resume {
     justify-content: left;
