@@ -316,11 +316,6 @@ p,
   margin: 0 auto;
 }
 
-section.about br {
-  display: block;
-  margin: 4px 0;
-}
-
 header {
   background-image: url(../assets/stardust_@2X.png);
   background-attachment: fixed;
@@ -718,9 +713,8 @@ section.about .aboutParent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 section.about .aboutParent div:nth-child(1) {
@@ -732,23 +726,67 @@ section.about .picture img {
   width: 310px;
 }
 
-section.skills {
-  height: auto;
-  background-color: #DCEBEA;
+section.events {
+  height: 100vh;
+  background-color: #EFEFF0;
   padding-bottom: 50px;
 }
 
-section.skills .bodyLine {
-  margin-bottom: 80px;
+section.events .bodyLine {
+  margin-bottom: 100px;
 }
 
-section.projects {
-  background: #EFEFF0;
+section.events p {
+  color: #444349;
+  margin-top: 0;
+  text-align: center;
+}
+
+section.work {
   height: auto;
+  background-color: #EFEFF0;
+  padding-bottom: 50px;
 }
 
-section.projects .bodyLine.seperator {
-  width: 50px;
+section.work .bodyLine {
+  margin-bottom: 100px;
+}
+
+section.work p {
+  color: #444349;
+  margin-top: 0;
+}
+
+section.work .eventLine p {
+  text-align: center;
+}
+
+section.work h3 {
+  font-family: 'Source Sans Pro';
+  color: #444349;
+  font-size: 23px;
+  margin-top: 0px;
+}
+
+section.work .aboutParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section.work .aboutParent div:nth-child(1) {
+  width: 50%;
+  padding-left: 20px;
+}
+
+section.work .picture img {
+  width: 450px;
+}
+
+#work > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) {
+  padding-left: 40px;
 }
 
 section.contact {
@@ -947,56 +985,6 @@ section.contact .phone {
   margin-bottom: 50px;
 }
 
-section.contact .phone a[href^="mailto"] {
-  color: inherit;
-  text-decoration: underline;
-  line-height: 0;
-}
-
-section.contact .phone a.calendly {
-  color: inherit;
-  line-height: 0;
-  text-decoration: underline;
-  margin-top: 23px;
-}
-
-section.contact .phone p:nth-child(1) {
-  text-align: center;
-}
-
-section.contact .padded {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-section.contact .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 35px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 100px;
-  margin-top: 23px;
-}
-
-section.contact .social a:focus {
-  color: #444349;
-}
-
-section.contact .social a i {
-  margin-left: 10px;
-  margin-right: 10px;
-  color: #444349;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-section.contact .social a i:hover, section.contact .social a i:active {
-  color: #b3331a;
-}
-
 footer {
   background-color: #444349;
   width: 100%;
@@ -1081,12 +1069,41 @@ footer p {
   }
   section.about .aboutParent img {
     padding-bottom: 30px;
+    width: 310px;
   }
   section.about .aboutParent .resume a {
     margin: 0 auto;
   }
   section.about h3 {
     text-align: center;
+  }
+  section.work .aboutParent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.work .aboutParent img {
+    padding-bottom: 30px;
+    width: 310px;
+  }
+  section.work .aboutParent .resume a {
+    margin: 0 auto;
+  }
+  section.work h3 {
+    text-align: center;
+  }
+  section.work .aboutParent div:nth-child(1) {
+    padding-left: 0px;
+  }
+  #work > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) {
+    padding-left: 0px;
+  }
+  section.work .aboutParent div:nth-child(1) {
+    width: auto;
   }
 }
 
@@ -1105,10 +1122,12 @@ footer p {
     font-size: 28px;
     letter-spacing: 3px;
   }
-  section.about {
+  section.about,
+  section.work {
     padding-bottom: 75px;
   }
-  section.about .bodyLine {
+  section.about .bodyLine,
+  section.work .bodyLine {
     margin-bottom: 75px;
   }
   section.skills {
@@ -1177,8 +1196,9 @@ footer p {
   nav ul li {
     border-bottom: 1px solid #EFEFF0;
   }
-  section.about .aboutParent div:nth-child(1) {
-    width: 100%;
+  section.about .aboutParent div:nth-child(1),
+  section.work .aboutParent div:nth-child(1) {
+    width: auto;
   }
   section.contact form {
     width: 90%;
@@ -1232,7 +1252,8 @@ footer p {
   .topBar {
     height: 43px;
   }
-  section.about .picture img {
+  section.about .picture img,
+  section.work .picture img {
     width: 100%;
     height: auto;
   }

@@ -109,45 +109,5 @@ section.contact {
     align-items: center;
     color: $darkColor;
     margin-bottom: 50px;
-    a[href^="mailto"] {
-      color: inherit;
-      text-decoration: underline;
-      line-height: 0;
-    }
-    a.calendly {
-      color: inherit;
-      line-height: 0;
-      text-decoration: underline;
-      margin-top: 23px;
-    }
-    p:nth-child(1) {
-      text-align: center;
-    }
-  }
-  .padded {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  .social {
-    display: flex;
-    font-size: 35px;
-    justify-content: center;
-    margin-bottom: 100px;
-    margin-top: 23px;
-    a {
-      &:focus {
-        color: $darkColor;
-      }
-      i {
-        margin-left: 10px;
-        margin-right: 10px;
-        color: $darkColor;
-        transition: 0.3s;
-        &:hover,
-        &:active {
-          color: $accentColor;
-        }
-      }
-    }
   }
 }

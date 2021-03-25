@@ -1,0 +1,14 @@
+section.events{
+  height: 100vh;
+  background-color: $lightColor;
+  padding-bottom: 50px;
+  .bodyLine {
+    margin-bottom: 100px;
+  }
+  p {
+    color: $darkColor;
+    margin-top: 0;
+    text-align: center;
+  }
+}
+

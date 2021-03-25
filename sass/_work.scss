@@ -1,4 +1,4 @@
-section.about{
+section.work{
   height: auto;
   background-color: $lightColor;
   padding-bottom: 50px;
@@ -18,35 +18,24 @@ section.about{
     font-size: 23px;
     margin-top: 0px;
   }
-  .resume {
-    justify-content: left;
-    a {
-      color: $accentColor;
-      font-family: 'Hamburg Hand Light';
-      border-bottom: 1px solid $accentColor;
-      width: 205px;
-      padding-bottom: 1px;
-      letter-spacing: 1px;
-      padding-top: 20px;
-      &:hover,
-      &:focus {
-        border-bottom: 1px solid transparent;
-        color: #e44a2b;
-      }
-    }
-  }
   .aboutParent {
     display: flex;
     justify-content: space-around;
     div:nth-child(1) {
-      width: 65%;
-      padding-right: 20px;
+      width: 50%;
+      padding-left: 20px;
     }
   }
   .picture {
     img{
-      width: 310px;
+      width: 450px;
     }
   }
 }
+
+#work > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) {
+  padding-left: 40px;
+  }
+
+
 
