@@ -69,31 +69,6 @@
       text-align: center;
     }
   } 
-  section.work {
-    .aboutParent {
-      flex-direction: column;
-      align-items: center;
-      img {
-        padding-bottom: 30px;
-        width: 310px;
-      }
-      .resume a {
-        margin: 0 auto;
-      }
-    }
-    h3 {
-      text-align: center;
-    }
-  }
-  section.work .aboutParent div:nth-child(1) {
-    padding-left: 0px;
-    }
-    #work > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) {
-    padding-left: 0px;
-    }
-    section.work .aboutParent div:nth-child(1) {
-     width: auto;
-    }
 }
 
 
@@ -180,8 +155,7 @@
   nav ul li {
     border-bottom: 1px solid $lightColor;
   }
-  section.about,
-  section.work {
+  section.about {
     .aboutParent {
       div:nth-child(1) {
         width: auto;
@@ -240,8 +214,7 @@
   .topBar {
     height: 43px;
   }
-  section.about,
-  section.work {
+  section.about {
     .picture {
       img {
         width: 100%;

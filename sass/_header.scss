@@ -1,5 +1,6 @@
 header {
-  background-image: url(../assets/stardust_@2X.png);
+  // background-image: url(../assets/stardust_@2X.png);
+  background-image: url(../assets/more-leaves-on-green.png);
   background-attachment: fixed;
   height: 100vh;
   display: flex;
@@ -21,7 +22,7 @@ h1 {
 }
 h1, 
 h2.header {
-  color: $lightColor;
+  color: $darkColor;
   padding: 0;
   text-align: center;
 }
