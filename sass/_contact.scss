@@ -3,12 +3,6 @@ section.contact {
   background-color: #E2F3E9;
   display: flex;
   flex-direction: column;
-  p.working {
-    text-align: center;
-    margin: 0;
-    padding-top: 100px;
-    padding-bottom: 15px;
-  }
   form{
     width: 55%;
     margin: 0 auto;
@@ -101,12 +95,6 @@ section.contact {
   .buttonParent {
     display: flex;
     align-items: center;
-  }
-  .phone {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: $darkColor;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 }

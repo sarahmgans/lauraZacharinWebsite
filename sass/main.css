@@ -301,8 +301,7 @@ h2 {
   font-weight: 400;
 }
 
-p,
-.phone {
+p {
   font-family: 'Source Sans Pro';
   color: #59585F;
   font-size: 19px;
@@ -665,7 +664,7 @@ header i.fas {
 section.about {
   height: auto;
   background-color: #EFEFF0;
-  padding-bottom: 50px;
+  padding-bottom: 84px;
 }
 
 section.about .bodyLine {
@@ -675,38 +674,6 @@ section.about .bodyLine {
 section.about p {
   color: #59585F;
   margin-top: 0;
-}
-
-section.about .eventLine p {
-  text-align: center;
-}
-
-section.about h3 {
-  font-family: 'Source Sans Pro';
-  color: #59585F;
-  font-size: 23px;
-  margin-top: 0px;
-}
-
-section.about .resume {
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-}
-
-section.about .resume a {
-  color: #49AB74;
-  font-family: 'Hamburg Hand Light';
-  border-bottom: 1px solid #49AB74;
-  width: 205px;
-  padding-bottom: 1px;
-  letter-spacing: 1px;
-  padding-top: 20px;
-}
-
-section.about .resume a:hover, section.about .resume a:focus {
-  border-bottom: 1px solid transparent;
-  color: #e44a2b;
 }
 
 section.about .aboutParent {
@@ -737,19 +704,24 @@ section.events .bodyLine {
 }
 
 section.events p {
-  color: #59585F;
-  margin-top: 0;
   text-align: center;
 }
 
 section.work {
   height: auto;
   background-color: #E2F3E9;
-  padding-bottom: 50px;
+  padding-bottom: 105px;
 }
 
 section.work .bodyLine {
   margin-bottom: 100px;
+}
+
+section.work h3 {
+  font-family: 'Source Sans Pro';
+  color: #59585F;
+  font-size: 23px;
+  margin-top: 0px;
 }
 
 section.work .poem {
@@ -765,24 +737,8 @@ section.work .poem {
           align-items: center;
 }
 
-section.work p {
-  color: #59585F;
-  margin-top: 0;
-}
-
-section.work h3 {
-  font-family: 'Source Sans Pro';
-  color: #59585F;
-  font-size: 23px;
-  margin-top: 0px;
-}
-
-section.work h4 {
-  font-family: 'Source Sans Pro';
-  color: #59585F;
-  font-size: 19px;
-  margin-top: 0px;
-  font-weight: normal;
+section.work .title {
+  font-style: italic;
 }
 
 section.work .buy {
@@ -790,8 +746,8 @@ section.work .buy {
   text-align: center;
 }
 
-section.work .title {
-  font-style: italic;
+section.work .buy p {
+  margin-top: 0;
 }
 
 section.work a {
@@ -801,9 +757,7 @@ section.work a {
   width: 100px;
   padding-bottom: 0px;
   letter-spacing: 1px;
-  padding-top: 0px;
   margin: 0 auto;
-  text-align: center;
 }
 
 section.work a:hover, section.work a:focus {
@@ -821,13 +775,6 @@ section.contact {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-section.contact p.working {
-  text-align: center;
-  margin: 0;
-  padding-top: 100px;
-  padding-bottom: 15px;
 }
 
 section.contact form {
@@ -990,21 +937,7 @@ section.contact .buttonParent {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-section.contact .phone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #59585F;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 footer {
@@ -1022,42 +955,13 @@ footer p {
   letter-spacing: 0.4px;
 }
 
-@media (max-width: 1260px) {
-  section.projects img {
-    width: 500px;
-  }
-  section.projects .projectParent p {
-    width: 500px;
-  }
-}
-
 @media (max-width: 1160px) {
-  section.projects img,
-  section.projects .projectParent p {
-    width: 400px;
-  }
   section.contact form {
     width: 90%;
   }
 }
 
 @media (max-width: 975px) {
-  section.projects .projectParent {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  section.projects .projectParent img {
-    width: 500px;
-    padding-bottom: 30px;
-  }
-  section.projects .projectParent.middle {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
   .formParent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1069,9 +973,6 @@ footer p {
   }
   section.contact form {
     width: 70%;
-  }
-  section.contact p.working {
-    padding-bottom: 0;
   }
   section.contact form {
     padding-top: 0;
@@ -1093,9 +994,6 @@ footer p {
     padding-bottom: 30px;
     width: 310px;
   }
-  section.about .aboutParent .resume a {
-    margin: 0 auto;
-  }
   section.about h3 {
     text-align: center;
   }
@@ -1116,29 +1014,18 @@ footer p {
     font-size: 28px;
     letter-spacing: 3px;
   }
-  section.about,
-  section.work {
-    padding-bottom: 75px;
+  section.contact .buttonParent {
+    margin-bottom: 30px;
   }
   section.about .bodyLine,
   section.work .bodyLine {
     margin-bottom: 75px;
   }
-  section.skills {
-    padding-bottom: 25px;
+  section.about {
+    padding-bottom: 57px;
   }
-  section.skills .bodyLine {
-    margin-bottom: 68px;
-  }
-  section.projects .projectParent {
-    margin-top: 75px;
-    padding-bottom: 75px;
-  }
-  section.contact .social {
-    margin-bottom: 75px;
-  }
-  section.contact p.working {
-    padding-top: 75px;
+  section.work {
+    padding-bottom: 80px;
   }
   section.contact .formParent {
     margin-top: 15px;
@@ -1211,15 +1098,8 @@ footer p {
     font-size: 27px;
     letter-spacing: 2px;
   }
-  section.projects .projectParent img,
-  div.projectParent:nth-child(3) > div:nth-child(2) {
-    width: 400px;
-  }
   section.contact form {
     width: 90%;
-  }
-  section.projects .projectParent h3 {
-    font-size: 20px;
   }
 }
 
@@ -1249,26 +1129,6 @@ footer p {
     width: 100%;
     height: auto;
   }
-  section.skills {
-    padding-bottom: 35px;
-  }
-  section.projects {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  section.projects .projectParent img,
-  section.projects .projectParent p {
-    width: 330px;
-  }
-  section.projects .link a {
-    margin: 10px 10px 0 10px;
-    padding: 11px 0;
-    font-size: 14px;
-    width: 154px;
-  }
-  div.projectParent:nth-child(3) > div:nth-child(2) {
-    width: 340px;
-  }
   section.contact form {
     width: 100%;
   }
@@ -1281,10 +1141,6 @@ footer p {
   h2.header {
     font-size: 19px;
   }
-  section.projects .projectParent h3 {
-    letter-spacing: 1px;
-    font-size: 20px;
-  }
 }
 
 @media (max-width: 375px) {
@@ -1293,19 +1149,6 @@ footer p {
   }
   header i.fas {
     font-size: 50px;
-  }
-  section.projects .projectParent img,
-  section.projects .projectParent p {
-    width: 270px;
-  }
-  div.projectParent:nth-child(3) > div:nth-child(2) {
-    width: 294px;
-  }
-  section.projects .link a {
-    width: 125px;
-  }
-  section.skills {
-    padding-bottom: 45px;
   }
 }
 
