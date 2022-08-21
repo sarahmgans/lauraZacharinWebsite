@@ -717,11 +717,8 @@ section.work .bodyLine {
   margin-bottom: 100px;
 }
 
-section.work h3 {
-  font-family: 'Source Sans Pro';
-  color: #59585F;
-  font-size: 23px;
-  margin-top: 0px;
+section.work p {
+  text-align: center;
 }
 
 section.work .poem {
@@ -741,6 +738,28 @@ section.work .title {
   font-style: italic;
 }
 
+section.work a {
+  color: #49AB74;
+  font-family: 'Hamburg Hand Light';
+  border-bottom: 1px solid #49AB74;
+  padding-bottom: 0px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+}
+
+section.work a:hover, section.work a:focus {
+  border-bottom: 1px solid transparent;
+  color: #EE6C4D;
+}
+
+section.work .link {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
 section.work .buy {
   padding-top: 60px;
   text-align: center;
@@ -750,19 +769,8 @@ section.work .buy p {
   margin-top: 0;
 }
 
-section.work a {
-  color: #49AB74;
-  font-family: 'Hamburg Hand Light';
-  border-bottom: 1px solid #49AB74;
+section.work .buy a {
   width: 100px;
-  padding-bottom: 0px;
-  letter-spacing: 1px;
-  margin: 0 auto;
-}
-
-section.work a:hover, section.work a:focus {
-  border-bottom: 1px solid transparent;
-  color: #EE6C4D;
 }
 
 section.contact {
