@@ -770,7 +770,9 @@ section.work .buy p {
 }
 
 section.work .buy a {
-  width: 100px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 section.contact {
