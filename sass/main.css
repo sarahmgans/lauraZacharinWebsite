@@ -315,6 +315,10 @@ p {
   margin: 0 auto;
 }
 
+.title {
+  font-style: italic;
+}
+
 header {
   background-image: url(../assets/more-leaves-on-green.png);
   background-attachment: fixed;
