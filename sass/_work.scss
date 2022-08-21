@@ -8,10 +8,8 @@ section.work{
   p {
     text-align: center;
   }
-  .poem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  p.heading {
+    font-weight: bold;
   }
   .title {
     font-style: italic;
