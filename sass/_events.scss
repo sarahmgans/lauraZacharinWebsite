@@ -1,12 +1,53 @@
 section.events{
-  height: 100vh;
-  background-color: $lightColor;
-  padding-bottom: 50px;
+  height: auto;
+  background-color: #E2F3E9;
+  padding-bottom: 105px;
   .bodyLine {
     margin-bottom: 100px;
   }
   p {
     text-align: center;
   }
-}
+  p.heading {
+    font-weight: bold;
+  }
+  .title {
+    font-style: italic;
+  }
+  a {
+    color: $accentColor;
+    font-family: 'Hamburg Hand Light';
+    border-bottom: 1px solid $accentColor;
+    padding-bottom: 0px;
+    margin: 0 auto;
+    display: inline;
+    letter-spacing: 1px;
+    font-size: 16px;
+      &:hover,
+      &:focus {
+        border-bottom: 1px solid transparent;
+        color: #EE6C4D;
+      }
+  }
+  .link {
+    width: max-content;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .see {
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    p {
+      margin-top: 0;
+    }
+    a {
+      width: max-content;
+    }
+  }
+};
+
+
+
+
 

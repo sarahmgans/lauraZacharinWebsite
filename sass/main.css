@@ -701,9 +701,9 @@ section.about .picture img {
 }
 
 section.events {
-  height: 100vh;
-  background-color: #EFEFF0;
-  padding-bottom: 50px;
+  height: auto;
+  background-color: #E2F3E9;
+  padding-bottom: 105px;
 }
 
 section.events .bodyLine {
@@ -712,6 +712,54 @@ section.events .bodyLine {
 
 section.events p {
   text-align: center;
+}
+
+section.events p.heading {
+  font-weight: bold;
+}
+
+section.events .title {
+  font-style: italic;
+}
+
+section.events a {
+  color: #49AB74;
+  font-family: 'Hamburg Hand Light';
+  border-bottom: 1px solid #49AB74;
+  padding-bottom: 0px;
+  margin: 0 auto;
+  display: inline;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+section.events a:hover, section.events a:focus {
+  border-bottom: 1px solid transparent;
+  color: #EE6C4D;
+}
+
+section.events .link {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+section.events .see {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+}
+
+section.events .see p {
+  margin-top: 0;
+}
+
+section.events .see a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 section.work {
@@ -1028,13 +1076,15 @@ footer p {
     margin-bottom: 30px;
   }
   section.about .bodyLine,
-  section.work .bodyLine {
+  section.work .bodyLine,
+  section.events .bodyLine {
     margin-bottom: 75px;
   }
   section.about {
     padding-bottom: 57px;
   }
-  section.work {
+  section.work,
+  section.events {
     padding-bottom: 80px;
   }
   section.contact .formParent {
