@@ -701,7 +701,7 @@ section.about .picture img {
 }
 
 section.events {
-  height: auto;
+  height: 100vh;
   background-color: #E2F3E9;
   padding-bottom: 105px;
 }
